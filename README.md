@@ -35,6 +35,6 @@ The goal of `conflicts` is to make this task easier by building a powerful and e
 - In addition, classes, as a useful concept for code organization and modularity, may be used.  
 - We plan to use `git` and Github to iterate on our work.
 
-[^1]:  <mailto:noaddress@nocompany.com>
-[^2]:  <mailto:noaddress@nocompany.com>
-[^3]:  <mailto:noaddress@nocompany.com>
+[^1]:  <https://github.com/BenRaz123>
+[^2]:  <https://github.com/person636>
+[^3]:  <https://github.com/da-real-nate08>
