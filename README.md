@@ -35,6 +35,15 @@ The goal of `conflicts` is to make this task easier by building a powerful and e
 - In addition, classes, as a useful concept for code organization and modularity, may be used.  
 - We plan to use `git` and Github to iterate on our work.
 
+## Utilities
+
+### Build DESIGN.pdf
+
+make sure you have nix installed with flakes turned on
+```shell
+$ nix build .#design-pdf -o DESIGN.pdf
+```
+
 [^1]:  <https://github.com/BenRaz123>
 [^2]:  <https://github.com/person636>
 [^3]:  <https://github.com/da-real-nate08>
