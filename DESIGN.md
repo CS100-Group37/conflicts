@@ -87,3 +87,18 @@ Implementation does not matter
         MAKE-METHODS:
             TO-JSON: TYPE -> STRING
             FROM-JSON: STRING -> TYPE
+
+## Examples
+
+- `conflicts add "Class" 2-3p +w` - Adds event "Class" 2-3pm today that repeats every 2 weeks
+- `conflicts query 1-1:30p` ->
+```
+* Class @ 2:00 - 3:00pm (weekly repeat)
+```
+- `conflicts query 2pm +1d` (not a repetition, one day in the future) -> `All clear.`
+- ```shell
+$ cat conflicts.json
+[
+    {name:"Hello", date: {begin: {...}, end:{...}}, repeat: null}
+]
+```
