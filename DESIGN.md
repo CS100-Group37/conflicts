@@ -72,9 +72,7 @@ author: CS100 Group 37
             MONTHLY => return day == day, if e1.rep.number != 1: and monthDiff % monthRep == 0
             DAILY => return true
             WEEKLY =>
-                while e1+num of weeks is not after e2
-                    if e1.date == e2.date
-                        return true
+                weekdays the same && delta_in_weeks % weekRep == 0
         }
 
 ## Macros
