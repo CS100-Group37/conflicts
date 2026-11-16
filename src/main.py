@@ -19,7 +19,7 @@ def parse_add_arg(arg):
 
     return ret
 
-#TODO: 22
+#TODO: 2
 # arg is a list of strings
 # transform query 1:30p -> { time: "1:30p" }
 # transform query 9a +2w -> { time: "9a", date_offset: "+2w" } 
