@@ -1,4 +1,5 @@
 import json
+import sys
 
 #TODO: 1
 # use json.loads after reading the file to a string
