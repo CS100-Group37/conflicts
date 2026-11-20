@@ -23,11 +23,19 @@ def parse_add_arg(arg):
 #TODO: 2
 # arg is a list of strings
 # transform query 1:30p -> { time: "1:30p" }
-# transform query 9a +2w -> { time: "9a", date_offset: "+2w" } 
+# transform query 9a +2w -> { time: "9a", date_offset: "+2w" }
 # transform query 9a 2026-09-23 -> { time: "9a", date: "2026-09-23" }
 # (whether or not it starts with a "+" determines if it is date_offset or date)
-def parse_query_arg(arg):
-    pass
+def parse_query_arg (arg) :
+    ret = {}
+    for item in arg:
+        if item.startswith("+"):
+            ret["date_offset"] = item
+        elif "-" in item and len(item) == 10:
+            ret["date"] = item
+        else:
+            ret["time"] = item
+    return ret
 
 def main():
     print(parse_add_arg(["class", "2:30p"]))
